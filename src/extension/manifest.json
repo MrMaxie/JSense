@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "My Extension",
+    "version": "1.0.1",
+    "action": {
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "24": "assets/icon24.png",
+            "32": "assets/icon32.png"
+        }
+    },
+    "description": "A plain text description",
+    "icons": {
+        "16": "assets/icon16.png",
+        "32": "assets/icon32.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "devtools_page": "devtools.html",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"],
+            "run_at": "document_start"
+        }
+    ]
+}

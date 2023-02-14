@@ -1,0 +1,36 @@
+{
+    "name": "jsense",
+    "version": "0.0.1",
+    "description": "Universal browser developing tool",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MrMaxie/JSense.git"
+    },
+    "exports": {
+        "import": "./build/module/mjs/index.js",
+        "require": "./build/module/cjs/index.js"
+    },
+    "scripts": {
+        "build": "tsx make build",
+        "start": "tsx make start"
+    },
+    "dependencies": {
+        "mobx-state-tree": "5.1.7",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@nodi/bunbun": "1.0.17",
+        "@types/chrome": "0.0.212",
+        "@types/react": "18.0.28",
+        "@types/react-dom": "18.0.10",
+        "esbuild": "0.17.7",
+        "esbuild-plugin-d.ts": "1.1.0",
+        "mobx": "6.8.0",
+        "mobx-react": "7.6.0",
+        "sass": "1.58.0",
+        "tsx": "3.12.3",
+        "typescript": "4.9.5"
+    }
+}

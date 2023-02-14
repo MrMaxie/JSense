@@ -1,0 +1,16 @@
+.views--actions {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    gap: 30px;
+    // align-items: stretch;
+    // justify-items: stretch;
+    justify-content: space-around;
+
+    .action-btn {
+        padding: 10px;
+        border: 1px solid red;
+        width: 100px;
+
+    }
+}

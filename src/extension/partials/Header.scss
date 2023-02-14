@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid mix(#222631, #111111, 50%);
+
+    .left {
+        flex: 1;
+    }
+
+    .menu-item {
+        padding: 5px 10px;
+        display: inline-block;
+
+        &:hover {
+            cursor: pointer;
+            color: #455DDC;
+        }
+
+        &[data-is-active="true"] {
+            background-color: mix(#455DDC, #111111, 20%);
+            color: #455DDC;
+        }
+    }
+}
